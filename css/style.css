@@ -1,0 +1,24 @@
+h1 {
+  color: blueviolet;
+}
+
+.navbar {
+  background-color: rgb(10, 197, 172);
+}
+
+.flex {
+  background-color: rgb(10, 197, 172);
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+.flex .footer_icon {
+  color: white;
+  display: flex;
+  margin-left: 2rem;
+  padding: 1rem;
+}
+.flex .footer_text {
+  color: white;
+  margin-left: 2rem;
+}/*# sourceMappingURL=style.css.map */
