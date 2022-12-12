@@ -1,0 +1,17 @@
+.flex {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+
+  .footer_icon {
+    color: white;
+    display: flex;
+    margin-left: 2rem;
+    padding: 1rem;
+  }
+  .footer_text {
+    color: $text-color;
+    margin-left: 2rem;
+  }
+}

@@ -1,27 +1,85 @@
 @import "variables";
+@import "footer";
 
 h1 {
-  color: blueviolet;
+  color: rgb(12, 94, 76);
 }
 
 .navbar {
   background-color: $primary-color;
+  color: $text-color;
 }
 
-.flex {
-  background-color: $primary-color;
+/*PRODUCTOS*/
+.container {
   display: flex;
   flex-direction: row;
-  font-size: 2rem;
-
-  .footer_icon {
-    color: white;
+  .card {
+    background-color: white;
     display: flex;
-    margin-left: 2rem;
+    margin: 2rem;
+    max-width: 100px;
     padding: 1rem;
+    box-shadow: 0 10px 20px 0 black;
+    justify-content: center;
   }
-  .footer_text {
-    color: $text-color;
-    margin-left: 2rem;
+}
+
+h1 h2 h3 h4 h5 {
+  @include animate-animated;
+}
+
+/* NOSOTROS */
+.card-body {
+  .card-title {
+    text-align: center;
+    color: $primary-color;
+  }
+  .card-text {
+    color: #476098;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    margin: 2rem;
+    max-width: 100%;
+    padding: 2rem;
+    box-shadow: 0 10px 20px 0 black;
+  }
+}
+
+/*CONTACTO*/
+
+.formulario {
+  padding: 1rem;
+  background: radial-gradient(
+    circle,
+    rgba(30, 201, 107, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: rgb(102, 23, 175);
+  .titulo__form {
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    font-size: 110%;
+    font-family: "Lucida Sans", sans-serif;
+    background: #ca4246;
+    background-color: #ca4246;
+    background: conic-gradient(
+      #ca4246 16.666%,
+      #e16541 16.666%,
+      #e16541 33.333%,
+      #f18f43 33.333%,
+      #f18f43 50%,
+      #8b9862 50%,
+      #8b9862 66.666%,
+      #476098 66.666%,
+      #476098 83.333%,
+      #a7489b 83.333%
+    );
+  }
+  .parrafo_form {
+    margin: 1rem;
+    font-size: 120%;
   }
 }

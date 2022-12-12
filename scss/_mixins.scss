@@ -1,6 +1,19 @@
-@mixin flexcenter($direction) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: $direction;
+@mixin animate-animated {
+  margin: 1rem;
+  --animation-duration: 5s;
+  color: rgb(81, 11, 172);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 242, 18, 1) 0%,
+    rgba(41, 214, 133, 1) 50%,
+    rgba(131, 58, 180, 1) 100%
+  );
+}
+
+@mixin make-contenedor($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
 }
