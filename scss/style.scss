@@ -3,6 +3,7 @@
 @import "globals";
 @import "mixins";
 
+/* Navbar */
 .navbar {
   background-color: $primary-color;
   color: $text-color;
@@ -12,10 +13,6 @@
   .img_logo {
     width: 50%;
   }
-}
-
-.container_footer {
-  margin: 2rem;
 }
 
 /*PRODUCTOS*/
@@ -38,6 +35,14 @@
 /* INDEX */
 .title_index {
   @include animate-animated;
+}
+
+.rule {
+  border-top: 1px solid black;
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 20px auto 0 auto;
 }
 
 /* NOSOTROS */
