@@ -1,36 +1,51 @@
 @import "variables";
 @import "footer";
 @import "globals";
+@import "mixins";
 
 .navbar {
   background-color: $primary-color;
   color: $text-color;
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-family: $font_family;
+  .img_logo {
+    width: 50%;
+  }
+}
+
+.container_footer {
+  margin: 2rem;
 }
 
 /*PRODUCTOS*/
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   .card {
     background-color: white;
     display: flex;
+    flex-direction: row;
     margin: 1rem;
     max-width: 100px;
     padding: 1rem;
-    box-shadow: 0 10px 20px 0 black;
+    box-shadow: $box-shadow;
     justify-content: center;
   }
 }
 
-h1 h2 h3 h4 .card-title {
+/* INDEX */
+.title_index {
   @include animate-animated;
 }
 
 /* NOSOTROS */
 .card-body {
+  margin: 1rem;
+  padding: 1rem;
   .card-title {
     text-align: center;
-    color: $primary-color;
   }
   .card-text {
     color: #476098;
@@ -40,7 +55,7 @@ h1 h2 h3 h4 .card-title {
     margin: 1rem;
     max-width: 100%;
     padding: 1rem;
-    box-shadow: 0 10px 20px 0 black;
+    box-shadow: $box-shadow;
   }
 }
 
@@ -58,21 +73,23 @@ h1 h2 h3 h4 .card-title {
     font-family: "Lucida Sans", sans-serif;
     background: #ca4246;
     background-color: #ca4246;
-    background: conic-gradient(
-      #ca4246 16.666%,
-      #e16541 16.666%,
-      #e16541 33.333%,
-      #f18f43 33.333%,
-      #f18f43 50%,
-      #8b9862 50%,
-      #8b9862 66.666%,
-      #476098 66.666%,
-      #476098 83.333%,
-      #a7489b 83.333%
-    );
+    background: conic-gradient(#ca4246 16.666%, #e16541 16.666%, #e16541 33.333%, #f18f43 33.333%, #f18f43 50%, #8b9862 50%, #8b9862 66.666%, #476098 66.666%, #476098 83.333%, #a7489b 83.333%);
   }
   .parrafo_form {
     margin: 1rem;
     font-size: 120%;
   }
+}
+
+.card-img-top {
+  @extend .images;
+}
+
+.nosotros_image {
+  display: flex;
+  justify-content: center;
+}
+
+#carouselExampleControls {
+  width: 70%;
 }
