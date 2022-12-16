@@ -1,5 +1,12 @@
-.container_footer {
-  margin: 2rem;
+.footer {
+  background-image: url(../images/footer_huellitas.png);
+  background-position: center bottom;
+  background-size: 80%;
+  background-repeat: repeat-x;
+}
+.footer .footer__p {
+  color: blue;
+  background-color: white;
 }
 
 .images, .card-img-top {
@@ -71,6 +78,10 @@
   padding: 1rem;
   box-shadow: 0 10px 20px 0 black;
 }
+.card-body .card_image {
+  display: flex;
+  justify-content: center;
+}
 
 /*CONTACTO*/
 .formulario {
@@ -93,11 +104,11 @@
   font-size: 120%;
 }
 
-.nosotros_image {
-  display: flex;
-  justify-content: center;
-}
-
 #carouselExampleControls {
   width: 70%;
+}
+
+.btn {
+  background-color: rgb(10, 175, 175);
+  color: white;
 }/*# sourceMappingURL=style.css.map */

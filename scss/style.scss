@@ -62,6 +62,10 @@
     padding: 1rem;
     box-shadow: $box-shadow;
   }
+  .card_image {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*CONTACTO*/
@@ -90,11 +94,11 @@
   @extend .images;
 }
 
-.nosotros_image {
-  display: flex;
-  justify-content: center;
-}
-
 #carouselExampleControls {
   width: 70%;
+}
+
+.btn {
+  background-color: rgb(10, 175, 175);
+  color: $text-color;
 }

@@ -1,3 +1,10 @@
-.container_footer {
-  margin: 2rem;
+.footer {
+  background-image: url(../images/footer_huellitas.png);
+  background-position: center bottom;
+  background-size: 80%;
+  background-repeat: repeat-x;
+  .footer__p {
+    color: blue;
+    background-color: white;
+  }
 }

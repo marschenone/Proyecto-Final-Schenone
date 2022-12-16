@@ -49,72 +49,78 @@
     </svg>
 
     <!--Comienza NAVBAR-->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img class="img_logo" src="images/logopagina.png" alt="logo cutie pet" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/contacto.html">Contactenos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="pages/accesorio.html">Accesorios</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="pages/alimento.html">Alimento Balanceado</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-              </ul>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="img_logo" src="images/logopagina.png" alt="logo cutie pet" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contactenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="pages/accesorio.html">Accesorios</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="pages/alimento.html">Alimento Balanceado</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
     <!--Fin Navbar-->
-    <h1 class="title_index">Bienvenidos!</h1>
-    <div class="container">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/image1.png" class="d-block w-100" alt="portada inicio" />
+    <main>
+      <h1 class="title_index">Bienvenidos!</h1>
+      <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/image1.png" class="d-block w-100" alt="portada inicio" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/image2.png" class="d-block w-100" alt="perros disfrazados" />
+            </div>
+            <div class="carousel-item">
+              <img src="images/images3.png" class="d-block w-100" alt="perro asomado" />
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="images/image2.png" class="d-block w-100" alt="perros disfrazados" />
-          </div>
-          <div class="carousel-item">
-            <img src="images/images3.png" class="d-block w-100" alt="perro asomado" />
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
+    </main>
+
     <hr class="rule" />
     <div class="row text-start align-items-center gy-2 my-2">
       <div class="col-12 col-md-4">
@@ -144,30 +150,27 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <div class="container_footer">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__div d-flex flex-column align-items-center justify-content-between">
+          <div class="footer__top d-inline-flex flex-row align-items-center mt-3">
+            <p class="footer__p mt-3 mx-3 fs-5">Copyright <b>Cutie Pets</b> Todos los derechos reservados.</p>
+          </div>
+          <div class="footer__redes">
+            <ul class="redes__ul">
+              <li class="redes__ul--li d-inline">
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram fs-2 m-3"></i></a>
+              </li>
+              <li class="redes__ul--li d-inline">
+                <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter fs-2 m-3"></i></a>
+              </li>
+              <li class="redes__ul--li d-inline">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fs-2 m-3"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="text-muted" href="#"
-              ><svg class="bi" width="24" height="24"><use xlink:href="#twitter" /></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#"
-              ><svg class="bi" width="24" height="24"><use xlink:href="#instagram" /></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="text-muted" href="#"
-              ><svg class="bi" width="24" height="24"><use xlink:href="#facebook" /></svg
-            ></a>
-          </li>
-        </ul>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
